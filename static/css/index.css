@@ -554,3 +554,72 @@ body {
   font-size: 18px;
   font-weight: bold;
 }
+
+.conBox {
+  width: 100%;
+  height: 1152px;
+  background-color: #fff;
+}
+.conBox .conWrap {
+  height: 1152px;
+  overflow: hidden;
+}
+.conBox .conWrap .tempWrap {
+  height: 143px;
+  margin-top: 48px;
+}
+.conBox .conWrap .tempWrap .temp-item {
+  display: block;
+  float: left;
+  width: 340px;
+  height: 143px;
+  margin-left: 6px;
+}
+.conBox .conWrap .tempWrap .temp-item:nth-of-type(1) {
+  margin-left: 0;
+}
+.conBox .conWrap .tempWrap .temp-item img {
+  width: 100%;
+  height: 100%;
+}
+.conBox .conWrap .videoWrap {
+  width: 100%;
+  height: 420px;
+  margin-top: 44px;
+  position: relative;
+  background-color: #333;
+}
+.conBox .conWrap .videoWrap .video {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.conBox .conWrap .moreWrap {
+  height: 405px;
+  margin-top: 45px;
+}
+.conBox .conWrap .moreWrap .left {
+  width: 514px;
+  height: 100%;
+}
+.conBox .conWrap .moreWrap .left img {
+  width: 100%;
+  height: 100%;
+}
+.conBox .conWrap .moreWrap .right {
+  width: 514px;
+  height: 100%;
+}
+.conBox .conWrap .moreWrap .right .more-item {
+  display: block;
+  width: 100%;
+  height: 198px;
+  margin-bottom: 9px;
+}
+.conBox .conWrap .moreWrap .right .more-item:last-child {
+  margin-bottom: 0;
+}
+.conBox .conWrap .moreWrap .right .more-item img {
+  width: 100%;
+  height: 100%;
+}

@@ -67,14 +67,20 @@ $(document).ready(function () {
     pagination: {
       el: '.swiper-pagination',
     },
-    
+
     autoplay: true,
 
   })        
 
 
 
-  // bottomWrap 下面的导航部分
+  // videoWrap
+  // 视频播放器
+  let $video = $('.video');
+  $video.click(function() {
+    this.controls = true;
+    this.autoplay = true;
+  });
 
 
 });
