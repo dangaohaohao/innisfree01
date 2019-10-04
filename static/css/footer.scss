@@ -91,26 +91,58 @@
 
     .top {
 
-      .contactUs, .members, .customer {
+      .contactUs,
+      .members,
+      .customer {
         margin-right: 40px;
 
+        // dd
         dt {
           font-size: 18px;
           font-weight: bold;
           color: #fff;
           margin-bottom: 20px;
+        }
 
-          dd {
+        // 裸空的 dd
+        dd {
+          color: $font-color;
+          font-size: 12px;
+          margin-bottom: 12px;
+
+          a {
             color: $font-color;
             font-size: 12px;
             margin-bottom: 12px;
           }
         }
+
       }
 
     }
-    .bottom {
 
+    .bottom {
+      a {
+        display: inline-block;
+        font-size: 12px;
+        color: $font-color;
+
+        &:nth-of-type(2) {
+          margin-left: 78px;
+        }
+
+        img {
+          width: 15px;
+          height: 15px;
+          float: left;
+          margin-right: 4px;
+        }
+        span {
+          font-size: 12px;
+          color: $font-color;
+          float: left;
+        }
+      }
     }
   }
 }
