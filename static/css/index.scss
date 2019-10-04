@@ -1,3 +1,13 @@
+body {
+  height: 6000px;
+}
+
+// 公共样式
+.w1032 {
+  width: 1032px;
+  margin: 0 auto;
+}
+
 // banner 图片开始
 .bannerWrap {
   width: 100%;
@@ -12,347 +22,348 @@
     position: relative;
 
     .swiper-wrapper {
-    // swiper-slide
-    .swiper-slide {
-      width: 100%;
-      height: 100%;
 
-      img {
+      // swiper-slide
+      .swiper-slide {
         width: 100%;
-        height: 448px;
-      }
+        height: 100%;
 
-      // 轮播图补充信息
-      // 一定要注意: 使用 swiper 轮播图组件，它会自动在前后加上两个轮播图，记得添加样式
-      
-      &:nth-of-type(1) {
-        .info {
+        img {
           width: 100%;
-          height: 192px;
-          background-color: #eae5e1;
-          $banner-color3: #970c1a;
+          height: 448px;
+        }
 
-          // main 中间的盒子
-          .main {
-            width: 840px;
-            height: 100%;
-            margin: 0 auto;
+        // 轮播图补充信息
+        // 一定要注意: 使用 swiper 轮播图组件，它会自动在前后加上两个轮播图，记得添加样式
 
-            // left
-            .left {
-              color: $banner-color3;
-              overflow: hidden;
+        &:nth-of-type(1) {
+          .info {
+            width: 100%;
+            height: 192px;
+            background-color: #eae5e1;
+            $banner-color3: #970c1a;
 
-              .tit1 {
-                font-size: 32px;
-                line-height: 32px;
-                font-weight: bold;
-                margin-top: 30px;
+            // main 中间的盒子
+            .main {
+              width: 840px;
+              height: 100%;
+              margin: 0 auto;
+
+              // left
+              .left {
+                color: $banner-color3;
+                overflow: hidden;
+
+                .tit1 {
+                  font-size: 32px;
+                  line-height: 32px;
+                  font-weight: bold;
+                  margin-top: 30px;
+                }
+
+                .tit2 {
+                  font-size: 32px;
+                  line-height: 32px;
+                  font-weight: bold;
+                  margin-top: 10px;
+                }
+
+                .info1 {
+                  font-size: 14px;
+                  line-height: 14px;
+                  margin-top: 16px;
+                }
+
+                .info2 {
+                  font-size: 14px;
+                  line-height: 14px;
+                  margin-top: 4px;
+                }
               }
 
-              .tit2 {
-                font-size: 32px;
-                line-height: 32px;
-                font-weight: bold;
-                margin-top: 10px;
-              }
+              //  right
+              .right {
+                a {
+                  display: block;
+                  margin-top: 106px;
+                  border: 4px solid $banner-color3;
+                  padding: 15px 70px;
 
-              .info1 {
-                font-size: 14px;
-                line-height: 14px;
-                margin-top: 16px;
-              }
-
-              .info2 {
-                font-size: 14px;
-                line-height: 14px;
-                margin-top: 4px;
-              }
-            }
-
-            //  right
-            .right {
-              a {
-                display: block;
-                margin-top: 106px;
-                border: 4px solid $banner-color3;
-                padding: 15px 70px;
-
-                span {
-                  font-size: 16px;
-                  color: $banner-color3;
+                  span {
+                    font-size: 16px;
+                    color: $banner-color3;
+                  }
                 }
               }
             }
           }
         }
-      }
 
-      // 第一张轮播图
-      &:nth-of-type(2) {
-        .info {
-          width: 100%;
-          height: 192px;
-          background-color: #f97b80;
-          $banner-color1: #fff;
+        // 第一张轮播图
+        &:nth-of-type(2) {
+          .info {
+            width: 100%;
+            height: 192px;
+            background-color: #f97b80;
+            $banner-color1: #fff;
 
-          // main 中间的盒子
-          .main {
-            width: 840px;
-            height: 100%;
-            margin: 0 auto;
+            // main 中间的盒子
+            .main {
+              width: 840px;
+              height: 100%;
+              margin: 0 auto;
 
-            // left
-            .left {
-              color: $banner-color1;
-              overflow: hidden;
+              // left
+              .left {
+                color: $banner-color1;
+                overflow: hidden;
 
-              .tit1 {
-                font-size: 32px;
-                line-height: 32px;
-                font-weight: bold;
-                margin-top: 30px;
-              }
+                .tit1 {
+                  font-size: 32px;
+                  line-height: 32px;
+                  font-weight: bold;
+                  margin-top: 30px;
+                }
 
-              .tit2 {
-                font-size: 32px;
-                line-height: 32px;
-                font-weight: bold;
-                margin-top: 10px;
-              }
+                .tit2 {
+                  font-size: 32px;
+                  line-height: 32px;
+                  font-weight: bold;
+                  margin-top: 10px;
+                }
 
-              .info1 {
-                font-size: 14px;
-                line-height: 14px;
-                margin-top: 16px;
-              }
+                .info1 {
+                  font-size: 14px;
+                  line-height: 14px;
+                  margin-top: 16px;
+                }
 
-              .info2 {
-                font-size: 14px;
-                line-height: 14px;
-                margin-top: 4px;
-              }
-            }
-
-            //  right
-            .right {
-              a {
-                display: block;
-                margin-top: 106px;
-                border: 4px solid $banner-color1;
-                padding: 15px 70px;
-
-                span {
-                  font-size: 16px;
-                  color: $banner-color1;
+                .info2 {
+                  font-size: 14px;
+                  line-height: 14px;
+                  margin-top: 4px;
                 }
               }
-            }
 
-          }
+              //  right
+              .right {
+                a {
+                  display: block;
+                  margin-top: 106px;
+                  border: 4px solid $banner-color1;
+                  padding: 15px 70px;
 
-        }
-
-      }
-
-      // 第二张轮播图
-      &:nth-of-type(3) {
-        .info {
-          width: 100%;
-          height: 192px;
-          background-color: #70757b;
-          $banner-color2: #fff;
-
-          // main 中间的盒子
-          .main {
-            width: 840px;
-            height: 100%;
-            margin: 0 auto;
-
-            // left
-            .left {
-              color: $banner-color2;
-              overflow: hidden;
-
-              .tit1 {
-                font-size: 32px;
-                line-height: 32px;
-                font-weight: bold;
-                margin-top: 30px;
-              }
-
-              .tit2 {
-                font-size: 32px;
-                line-height: 32px;
-                font-weight: bold;
-                margin-top: 10px;
-              }
-
-              .info1 {
-                font-size: 14px;
-                line-height: 14px;
-                margin-top: 16px;
-              }
-
-              .info2 {
-                font-size: 14px;
-                line-height: 14px;
-                margin-top: 4px;
-              }
-            }
-
-            //  right
-            .right {
-              a {
-                display: block;
-                margin-top: 106px;
-                border: 4px solid $banner-color2;
-                padding: 15px 70px;
-
-                span {
-                  font-size: 16px;
-                  color: $banner-color2;
+                  span {
+                    font-size: 16px;
+                    color: $banner-color1;
+                  }
                 }
               }
-            }
-          }
-        }
-      }
 
-      // 第三种轮播图
-      &:nth-of-type(4) {
-        .info {
-          width: 100%;
-          height: 192px;
-          background-color: #eae5e1;
-          $banner-color3: #970c1a;
-
-          // main 中间的盒子
-          .main {
-            width: 840px;
-            height: 100%;
-            margin: 0 auto;
-
-            // left
-            .left {
-              color: $banner-color3;
-              overflow: hidden;
-
-              .tit1 {
-                font-size: 32px;
-                line-height: 32px;
-                font-weight: bold;
-                margin-top: 30px;
-              }
-
-              .tit2 {
-                font-size: 32px;
-                line-height: 32px;
-                font-weight: bold;
-                margin-top: 10px;
-              }
-
-              .info1 {
-                font-size: 14px;
-                line-height: 14px;
-                margin-top: 16px;
-              }
-
-              .info2 {
-                font-size: 14px;
-                line-height: 14px;
-                margin-top: 4px;
-              }
-            }
-
-            //  right
-            .right {
-              a {
-                display: block;
-                margin-top: 106px;
-                border: 4px solid $banner-color3;
-                padding: 15px 70px;
-
-                span {
-                  font-size: 16px;
-                  color: $banner-color3;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      &:nth-of-type(5) {
-        .info {
-          width: 100%;
-          height: 192px;
-          background-color: #f97b80;
-          $banner-color1: #fff;
-
-          // main 中间的盒子
-          .main {
-            width: 840px;
-            height: 100%;
-            margin: 0 auto;
-
-            // left
-            .left {
-              color: $banner-color1;
-              overflow: hidden;
-
-              .tit1 {
-                font-size: 32px;
-                line-height: 32px;
-                font-weight: bold;
-                margin-top: 30px;
-              }
-
-              .tit2 {
-                font-size: 32px;
-                line-height: 32px;
-                font-weight: bold;
-                margin-top: 10px;
-              }
-
-              .info1 {
-                font-size: 14px;
-                line-height: 14px;
-                margin-top: 16px;
-              }
-
-              .info2 {
-                font-size: 14px;
-                line-height: 14px;
-                margin-top: 4px;
-              }
-            }
-
-            //  right
-            .right {
-              a {
-                display: block;
-                margin-top: 106px;
-                border: 4px solid $banner-color1;
-                padding: 15px 70px;
-
-                span {
-                  font-size: 16px;
-                  color: $banner-color1;
-                }
-              }
             }
 
           }
 
         }
 
+        // 第二张轮播图
+        &:nth-of-type(3) {
+          .info {
+            width: 100%;
+            height: 192px;
+            background-color: #70757b;
+            $banner-color2: #fff;
+
+            // main 中间的盒子
+            .main {
+              width: 840px;
+              height: 100%;
+              margin: 0 auto;
+
+              // left
+              .left {
+                color: $banner-color2;
+                overflow: hidden;
+
+                .tit1 {
+                  font-size: 32px;
+                  line-height: 32px;
+                  font-weight: bold;
+                  margin-top: 30px;
+                }
+
+                .tit2 {
+                  font-size: 32px;
+                  line-height: 32px;
+                  font-weight: bold;
+                  margin-top: 10px;
+                }
+
+                .info1 {
+                  font-size: 14px;
+                  line-height: 14px;
+                  margin-top: 16px;
+                }
+
+                .info2 {
+                  font-size: 14px;
+                  line-height: 14px;
+                  margin-top: 4px;
+                }
+              }
+
+              //  right
+              .right {
+                a {
+                  display: block;
+                  margin-top: 106px;
+                  border: 4px solid $banner-color2;
+                  padding: 15px 70px;
+
+                  span {
+                    font-size: 16px;
+                    color: $banner-color2;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // 第三种轮播图
+        &:nth-of-type(4) {
+          .info {
+            width: 100%;
+            height: 192px;
+            background-color: #eae5e1;
+            $banner-color3: #970c1a;
+
+            // main 中间的盒子
+            .main {
+              width: 840px;
+              height: 100%;
+              margin: 0 auto;
+
+              // left
+              .left {
+                color: $banner-color3;
+                overflow: hidden;
+
+                .tit1 {
+                  font-size: 32px;
+                  line-height: 32px;
+                  font-weight: bold;
+                  margin-top: 30px;
+                }
+
+                .tit2 {
+                  font-size: 32px;
+                  line-height: 32px;
+                  font-weight: bold;
+                  margin-top: 10px;
+                }
+
+                .info1 {
+                  font-size: 14px;
+                  line-height: 14px;
+                  margin-top: 16px;
+                }
+
+                .info2 {
+                  font-size: 14px;
+                  line-height: 14px;
+                  margin-top: 4px;
+                }
+              }
+
+              //  right
+              .right {
+                a {
+                  display: block;
+                  margin-top: 106px;
+                  border: 4px solid $banner-color3;
+                  padding: 15px 70px;
+
+                  span {
+                    font-size: 16px;
+                    color: $banner-color3;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-of-type(5) {
+          .info {
+            width: 100%;
+            height: 192px;
+            background-color: #f97b80;
+            $banner-color1: #fff;
+
+            // main 中间的盒子
+            .main {
+              width: 840px;
+              height: 100%;
+              margin: 0 auto;
+
+              // left
+              .left {
+                color: $banner-color1;
+                overflow: hidden;
+
+                .tit1 {
+                  font-size: 32px;
+                  line-height: 32px;
+                  font-weight: bold;
+                  margin-top: 30px;
+                }
+
+                .tit2 {
+                  font-size: 32px;
+                  line-height: 32px;
+                  font-weight: bold;
+                  margin-top: 10px;
+                }
+
+                .info1 {
+                  font-size: 14px;
+                  line-height: 14px;
+                  margin-top: 16px;
+                }
+
+                .info2 {
+                  font-size: 14px;
+                  line-height: 14px;
+                  margin-top: 4px;
+                }
+              }
+
+              //  right
+              .right {
+                a {
+                  display: block;
+                  margin-top: 106px;
+                  border: 4px solid $banner-color1;
+                  padding: 15px 70px;
+
+                  span {
+                    font-size: 16px;
+                    color: $banner-color1;
+                  }
+                }
+              }
+
+            }
+
+          }
+
+        }
+
+
+
       }
-
-
-
     }
-  }
 
     // 自定义 分页器 的样式
     .swiper-pagination {
@@ -416,6 +427,349 @@
       font-weight: bold;
       color: #fff;
     }
+  }
+
+}
+
+// productWrap
+.productWrap {
+  width: 100%;
+  height: 1025px;
+  background-color: #f0f3f2;
+
+  // productContent
+  .productContent {
+
+    // navWrap 上边的切换部分
+    .navWrap {
+      height: 126px;
+      position: relative;
+
+      // tab
+      .tab {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #41695e;
+        border-radius: 20px;
+
+        // tab-item
+        .tab-item {
+          width: 125px;
+          height: 34px;
+          text-align: center;
+          line-height: 34px;
+          color: #41695e;
+          background-color: #f0f3f2;
+          float: left;
+          cursor: pointer;
+
+          // 第一个
+          &:nth-of-type(1) {
+            border-radius: 20px 0 0 20px;
+          }
+
+          // 最后一个
+          &:last-child {
+            border-radius: 0px 20px 20px 0;
+          }
+        }
+
+        // 选中的样式
+        .tab-item.active {
+          background-color: #41695e;
+          color: #f0f3f2;
+        }
+
+      }
+    }
+
+    // centerWrap 中间的产品部分
+    .centerWrap {
+      height: 726px;
+
+      // left
+      .left {
+        width: 306px;
+        height: 670px;
+        background-color: skyblue;
+
+        // swiper-container 轮播图部分
+        .swiper-container {
+          width: 306px;
+          height: 495px;
+
+          .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+
+            .swiper-slide {
+              width: 100%;
+              height: 100%;
+
+              img {
+                width: 100%;
+                height: 100%;
+
+              }
+            }
+          }
+
+          .swiper-pagination {
+            top: 15px;
+            transform: translateX(-110px);
+          }
+          .swiper-pagination-bullet-active {
+            background-color: #002818;
+          }
+        }
+
+        // foryouWrap
+        .foryouWrap {
+          width: 100%;
+          height: 175px;
+          background-color: #044437;
+          color: #fff;
+
+          // foryou
+          .foryou {
+            height: 72px;
+            line-height: 72px;
+            text-align: center;
+
+            span {
+              font-size: 18px;
+              line-height: 18px;
+              font-weight: bold;
+              position: relative;
+
+              &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -100px;
+                width: 92px;
+                height: 1px;
+                background-color: #679089;
+              }
+
+              &:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -100px;
+                width: 92px;
+                height: 1px;
+                background-color: #fff;
+              }
+            }
+          }
+
+          // p 内容
+          p {
+            margin-top: 15px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 16px;
+          }
+
+          // toLogin
+          .toLogin {
+            width: 100%;
+            text-align: center;
+
+            a {
+              display: block;
+              width: 136px;
+              padding: 6px 0;
+              border: 1px solid #679089;
+              margin: 0 auto;
+
+              span {
+                font-size: 16px;
+                color: #fff;
+              }
+            }
+          }
+        }
+
+      }
+
+      // right
+      .right {
+        width: 700px;
+        height: 100%;
+
+        // product
+        .product {
+          width: 100%;
+          height: 100%;
+
+          // pro-item
+          .pro-item {
+            width: 210px;
+            height: 328px;
+            float: left;
+            margin-left: 23px;
+            position: relative;
+
+            // num
+            .num {
+              position: absolute;
+              top: 22px;
+              left: 23px;
+              width: 28px;
+              height: 38px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            // proImg
+            .proImg {
+              display: block;
+              width: 150px;
+              height: 148px;
+              margin: 66px auto 0;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            // proName
+            .proName {
+              width: 188px;
+              font-size: 14px;
+              color: #044437;
+              font-weight: bold;
+              border-bottom: 1px solid #024137;
+              margin: 0 auto;
+            }
+
+            // priceWrap
+            .priceWrap {
+              height: 32px;
+              line-height: 32px;
+              text-align: right;
+
+              // price
+              .price {
+                font-size: 14px;
+                font-weight: bold;
+                color: #024137;
+                margin-right: 10px;
+              }
+            }
+
+            // toBuyWrap
+            .toBuyWrap {
+              width: 196px;
+              margin: 2px auto;
+              display: none;
+
+              // toBuy
+              .toBuy {
+                width: 122px;
+                text-align: center;
+                float: left;
+                cursor: pointer;
+
+                a {
+                  display: block;
+                  width: 122px;
+                  padding: 6px 0;
+                  border: 1px solid #002818;
+                  background-color: #044437;
+
+                  span {
+                    font-size: 16px;
+                    color: #fff;
+                  }
+                }
+              }
+
+              // addCart
+              .addCart {
+                display: block;
+                float: left;
+                width: 30px;
+                height: 30px;
+                margin-left: 6px;
+                cursor: pointer;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+
+              // addLike
+              .addLike {
+                display: block;
+                float: left;
+                width: 30px;
+                height: 30px;
+                margin-left: 6px;
+                cursor: pointer;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+
+            }
+
+
+
+            &:hover {
+              background-color: #fff;
+              box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+
+              // 经过的时候显示
+              .toBuyWrap {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    // bottomWrap 下面的导航部分
+    .bottomWrap {
+      height: 172px;
+      border-top: 1px solid #044437;
+
+      .more {
+        width: 244px;
+        margin: 38px auto;
+        border: 1px solid #044437;
+
+        a {
+          width: 244px;
+          height: 46px;
+          display: block;
+          color: #153424;
+          text-align: center;
+          line-height: 46px;
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+
+    }
+
   }
 
 }

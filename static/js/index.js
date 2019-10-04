@@ -1,8 +1,10 @@
 
 $(document).ready(function () {
 
+  // banner 部分
+
   // 初始化轮播图
-  var mySwiper = new Swiper('.swiper-container', {
+  let mySwiper = new Swiper('.bannerWrap .swiper-container', {
     direction: 'horizontal', // 垂直切换选项
     loop: true, // 循环模式选项
 
@@ -45,5 +47,34 @@ $(document).ready(function () {
       $playstateIcon.removeClass('icon-bofang').addClass('icon-zanting');
     }
   });
+
+
+  // productWrap
+  // navWrap 上边的切换部分
+  // 利用事件委托 点击则添加 active 兄弟元素全部移除 active
+  let $tab = $('.navWrap .tab');
+  $tab.on('click', '.tab-item', function () {
+    $(this).addClass('active').siblings().removeClass('active');
+  });
+
+  // centerWrap  中间的产品部分
+  // 初始化产品轮播图
+  let myProduct = new Swiper ('.centerWrap .swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    autoplay: true,
+
+  })        
+
+
+
+  // bottomWrap 下面的导航部分
+
 
 });
