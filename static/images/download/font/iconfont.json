@@ -1,0 +1,58 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1069841",
+      "name": "3.0-右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "1486815",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "1494660",
+      "name": "右箭头",
+      "font_class": "youjiantou1",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "4052718",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "4485667",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e530",
+      "unicode_decimal": 58672
+    },
+    {
+      "icon_id": "6282792",
+      "name": "暂停",
+      "font_class": "zanting",
+      "unicode": "e6c2",
+      "unicode_decimal": 59074
+    },
+    {
+      "icon_id": "9021537",
+      "name": "左箭头",
+      "font_class": "zuojiantou",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    }
+  ]
+}
