@@ -100,12 +100,217 @@
             width: 36px;
             height: 36px;
             vertical-align: middle; }
-    .headerWrap .header .actionWrap .active .userWrap .userContent .mask {
-      position: absolute;
+    .headerWrap .header .actionWrap .active .userWrap .userContent {
+      display: none; }
+      .headerWrap .header .actionWrap .active .userWrap .userContent .mask {
+        position: fixed;
+        top: 54px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1; }
+      .headerWrap .header .actionWrap .active .userWrap .userContent .loginWrap {
+        position: fixed;
+        top: 54px;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 2; }
+        .headerWrap .header .actionWrap .active .userWrap .userContent .loginWrap .login,
+        .headerWrap .header .actionWrap .active .userWrap .userContent .loginWrap .register {
+          display: block;
+          width: 36%;
+          height: 42px;
+          text-align: center;
+          line-height: 42px;
+          border: 1px solid #a8a8a8;
+          position: fixed;
+          right: 7%; }
+          .headerWrap .header .actionWrap .active .userWrap .userContent .loginWrap .login:hover,
+          .headerWrap .header .actionWrap .active .userWrap .userContent .loginWrap .register:hover {
+            background-color: #044437; }
+          .headerWrap .header .actionWrap .active .userWrap .userContent .loginWrap .login span,
+          .headerWrap .header .actionWrap .active .userWrap .userContent .loginWrap .register span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: #a8a8a8;
+            font-size: 14px; }
+        .headerWrap .header .actionWrap .active .userWrap .userContent .loginWrap .login {
+          bottom: 20%; }
+        .headerWrap .header .actionWrap .active .userWrap .userContent .loginWrap .register {
+          bottom: 30%; }
+        .headerWrap .header .actionWrap .active .userWrap .userContent .loginWrap .closeIcon {
+          width: 30px;
+          height: 30px;
+          position: fixed;
+          right: 24%;
+          bottom: 10%;
+          cursor: pointer; }
+          .headerWrap .header .actionWrap .active .userWrap .userContent .loginWrap .closeIcon img {
+            width: 100%;
+            height: 100%; }
+    .headerWrap .header .actionWrap .active .searchWrap .searchBox {
+      position: fixed;
+      left: 0;
+      top: 54px;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.9);
-      z-index: 1;
       display: none; }
+      .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 550px;
+        z-index: 32; }
+        .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchHeader {
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 80px;
+          background-color: #044437; }
+          .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchHeader .topCenter {
+            width: 620px;
+            height: 100%;
+            margin: 0 auto; }
+            .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchHeader .topCenter .searchIptWrap {
+              margin-top: 23px;
+              width: 500px;
+              height: 35px;
+              border-bottom: 1px solid #fff;
+              position: relative;
+              background-color: #044437; }
+              .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchHeader .topCenter .searchIptWrap .searchbg {
+                display: block;
+                width: 500px;
+                height: 20px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: url("../images/searchBg.png") no-repeat left center;
+                background-size: 16px;
+                font-size: 16px;
+                color: #a4bcb7;
+                padding-left: 30px; }
+              .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchHeader .topCenter .searchIptWrap .searchipt {
+                width: 500px;
+                height: 30px;
+                border: none;
+                outline: none;
+                background-color: #044437;
+                color: #a4bcb7; }
+            .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchHeader .topCenter .srearchButton {
+              width: 100px;
+              height: 80px; }
+              .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchHeader .topCenter .srearchButton a {
+                display: block;
+                width: 100px;
+                height: 30px;
+                margin-top: 25px; }
+                .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchHeader .topCenter .srearchButton a img {
+                  width: 100%;
+                  height: 100%; }
+          .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchHeader .closeIcon {
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 30px;
+            right: 12%;
+            cursor: pointer; }
+            .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchHeader .closeIcon img {
+              width: 100%;
+              height: 100%; }
+        .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap {
+          width: 100%;
+          height: 470px;
+          background-color: #fff; }
+          .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .bannerHeader {
+            width: 1280px;
+            margin: 0 auto; }
+            .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .bannerHeader img {
+              display: block;
+              float: left;
+              width: 465px;
+              height: auto;
+              margin-top: 10px; }
+            .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .bannerHeader span {
+              display: block;
+              float: left;
+              margin: 10px 126px 0;
+              font-size: 24px;
+              color: #666; }
+          .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container {
+            width: 1280px;
+            height: 370px; }
+            .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container .swiper-wrapper {
+              width: 1280px;
+              height: 370px; }
+              .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container .swiper-wrapper .swiper-slide {
+                width: 1280px;
+                height: 370px; }
+                .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container .swiper-wrapper .swiper-slide .list {
+                  width: 1080px;
+                  height: 100%;
+                  margin: 0 auto; }
+                  .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container .swiper-wrapper .swiper-slide .list .pro-item {
+                    width: 210px;
+                    height: 100%;
+                    float: left;
+                    position: relative;
+                    margin: 0 30px; }
+                    .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container .swiper-wrapper .swiper-slide .list .pro-item .num {
+                      position: absolute;
+                      top: 22px;
+                      left: 23px;
+                      width: 28px;
+                      height: 38px; }
+                      .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container .swiper-wrapper .swiper-slide .list .pro-item .num img {
+                        width: 100%;
+                        height: 100%; }
+                    .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container .swiper-wrapper .swiper-slide .list .pro-item .proImg {
+                      display: block;
+                      width: 150px;
+                      height: 148px;
+                      margin: 66px auto 0; }
+                      .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container .swiper-wrapper .swiper-slide .list .pro-item .proImg img {
+                        width: 100%;
+                        height: 100%; }
+                    .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container .swiper-wrapper .swiper-slide .list .pro-item .proName {
+                      width: 188px;
+                      font-size: 14px;
+                      color: #044437;
+                      font-weight: bold;
+                      border-bottom: 1px solid #024137;
+                      margin: 0 auto; }
+                    .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container .swiper-wrapper .swiper-slide .list .pro-item .priceWrap {
+                      height: 32px;
+                      line-height: 32px;
+                      text-align: right; }
+                      .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container .swiper-wrapper .swiper-slide .list .pro-item .priceWrap .price {
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: #024137;
+                        margin-right: 10px; }
+            .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container .swiper-button-prev,
+            .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container .swiper-button-next {
+              color: #a4bcb7;
+              display: none; }
+            .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container:hover .swiper-button-prev,
+            .headerWrap .header .actionWrap .active .searchWrap .searchBox .searchContent .searchbannerWrap .swiper-container:hover .swiper-button-next {
+              display: block; }
+      .headerWrap .header .actionWrap .active .searchWrap .searchBox .mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 31; }
 
 /*# sourceMappingURL=header.css.map */

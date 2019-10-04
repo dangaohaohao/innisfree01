@@ -15,6 +15,9 @@
   z-index: 33;
   background-color: #fff;
 
+  $mainColor: #044437;
+  $fontColor: #a4bcb7;
+
   // 头部
   .header {
 
@@ -63,7 +66,7 @@
             .menuList {
               .menu-item {
                 margin-top: 28px;
-                
+
 
                 dt {
                   width: 100px;
@@ -165,28 +168,343 @@
 
           // userContent
           .userContent {
+            display: none;
+
+            // mask
             .mask {
-              position: absolute;
+              position: fixed;
+              top: 54px;
+              left: 0;
               width: 100%;
               height: 100%;
               background-color: rgba(0, 0, 0, .9);
               z-index: 1;
-              display: none;
+            }
+
+            // loginWrap
+            .loginWrap {
+              position: fixed;
+              top: 54px;
+              right: 0;
+              width: 50%;
+              height: 100%;
+              background-color: #fff;
+              z-index: 2;
+
+              .login,
+              .register {
+                display: block;
+                width: 36%;
+                height: 42px;
+                text-align: center;
+                line-height: 42px;
+                border: 1px solid #a8a8a8;
+                position: fixed;
+                right: 7%;
+
+                &:hover {
+                  background-color: $mainColor;
+                }
+
+                span {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  text-align: center;
+                  color: #a8a8a8;
+                  font-size: 14px;
+                }
+              }
+
+              // login
+              .login {
+                bottom: 20%;
+              }
+
+              // register
+              .register {
+                bottom: 30%;
+              }
+
+              // closeIcon
+              .closeIcon {
+                width: 30px;
+                height: 30px;
+                position: fixed;
+                right: 24%;
+                bottom: 10%;
+                cursor: pointer;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+
             }
           }
         }
 
 
         // search
-        .searchWrap {}
+        .searchWrap {
 
-        // shoppingCar
-        .shoppingCarWrap {}
+          // searchBox
+          .searchBox {
+            position: fixed;
+            left: 0;
+            top: 54px;
+            width: 100%;
+            height: 100%;
+            display: none;
 
+            // searchContent
+            .searchContent {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 550px;
+              z-index: 32;
+
+              // searchHeader
+              .searchHeader {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 80px;
+                background-color: $mainColor;
+
+                // topCenter
+                .topCenter {
+                  width: 620px;
+                  height: 100%;
+                  margin: 0 auto;
+
+                  // searchIptWrap
+                  .searchIptWrap {
+                    margin-top: 23px;
+                    width: 500px;
+                    height: 35px;
+                    border-bottom: 1px solid #fff;
+                    position: relative;
+                    background-color: $mainColor;
+
+                    .searchbg {
+                      display: block;
+                      width: 500px;
+                      height: 20px;
+                      position: absolute;
+                      left: 0;
+                      top: 0;
+                      background: url('../images/searchBg.png') no-repeat left center;
+                      background-size: 16px;
+                      font-size: 16px;
+                      color: $fontColor;
+                      padding-left: 30px;
+                    }
+
+                    .searchipt {
+                      width: 500px;
+                      height: 30px;
+                      border: none;
+                      outline: none;
+                      background-color: $mainColor;
+                      color: $fontColor;
+                    }
+
+                  }
+
+                  // srearchButton
+                  .srearchButton {
+                    width: 100px;
+                    height: 80px;
+
+                    a {
+                      display: block;
+                      width: 100px;
+                      height: 30px;
+                      margin-top: 25px;
+
+                      img {
+                        width: 100%;
+                        height: 100%;
+                      }
+                    }
+                  }
+                }
+
+                // closeIcon
+                .closeIcon {
+                  display: block;
+                  width: 30px;
+                  height: 30px;
+                  position: absolute;
+                  top: 30px;
+                  right: 12%;
+                  cursor: pointer;
+
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+
+              }
+
+              // searchbannerWrap
+              .searchbannerWrap {
+                width: 100%;
+                height: 470px;
+                background-color: #fff;
+
+                // bannerHeader
+                .bannerHeader {
+                  width: 1280px;
+                  margin: 0 auto;
+
+                  // 左右箭头的图片
+                  img {
+                    display: block;
+                    float: left;
+                    width: 465px;
+                    height: auto;
+                    margin-top: 10px;
+                  }
+
+                  span {
+                    display: block;
+                    float: left;
+                    margin: 10px 126px 0;
+                    font-size: 24px;
+                    color: #666;
+                  }
+                }
+
+                // swiper-container
+                .swiper-container {
+                  width: 1280px;
+                  height: 370px;
+
+                  // swiper-wrapper
+                  .swiper-wrapper {
+                    width: 1280px;
+                    height: 370px;
+
+                    // swiper-slide
+                    .swiper-slide {
+                      width: 1280px;
+                      height: 370px;
+
+                      // list
+                      .list {
+                        width: 1080px;
+                        height: 100%;
+                        margin: 0 auto;
+
+                        // pro-item
+                        .pro-item {
+                          width: 210px;
+                          height: 100%;
+                          float: left;
+                          position: relative;
+                          margin: 0 30px;
+
+                          // num
+                          .num {
+                            position: absolute;
+                            top: 22px;
+                            left: 23px;
+                            width: 28px;
+                            height: 38px;
+
+                            img {
+                              width: 100%;
+                              height: 100%;
+                            }
+                          }
+
+                          // proImg
+                          .proImg {
+                            display: block;
+                            width: 150px;
+                            height: 148px;
+                            margin: 66px auto 0;
+
+                            img {
+                              width: 100%;
+                              height: 100%;
+                            }
+                          }
+
+                          // proName
+                          .proName {
+                            width: 188px;
+                            font-size: 14px;
+                            color: #044437;
+                            font-weight: bold;
+                            border-bottom: 1px solid #024137;
+                            margin: 0 auto;
+                          }
+
+                          // priceWrap
+                          .priceWrap {
+                            height: 32px;
+                            line-height: 32px;
+                            text-align: right;
+
+                            // price
+                            .price {
+                              font-size: 14px;
+                              font-weight: bold;
+                              color: #024137;
+                              margin-right: 10px;
+                            }
+                          }
+                        }
+                      }
+
+
+                    }
+                  }
+
+                  .swiper-button-prev,
+                  .swiper-button-next {
+                    color: $fontColor;
+                    display: none;
+                  }
+
+                  &:hover {
+
+                    .swiper-button-prev,
+                    .swiper-button-next {
+                      display: block;
+                    }
+                  }
+                }
+
+              }
+
+            }
+
+            // mask
+            .mask {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, .8);
+              z-index: 31;
+            }
+          }
+        }
       }
     }
 
+    // shoppingCar
+    .shoppingCarWrap {}
 
   }
-
 }
