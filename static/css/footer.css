@@ -1,0 +1,77 @@
+.footer {
+  padding: 74px 22px 58px 72px;
+  background-color: #024138;
+}
+.footer .left .logo {
+  display: block;
+}
+.footer .left .logo img {
+  height: 58px;
+}
+.footer .left .center {
+  margin-top: 40px;
+}
+.footer .left .center .weibo,
+.footer .left .center .weixin {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin-right: 8px;
+}
+.footer .left .center .weibo img,
+.footer .left .center .weixin img {
+  width: 100%;
+  height: 100%;
+}
+.footer .left .center .shop {
+  display: inline-block;
+  width: 65px;
+  height: 45px;
+  margin-left: 32px;
+}
+.footer .left .center .shop img {
+  width: 100%;
+  height: 100%;
+}
+.footer .left .center .link {
+  display: inline-block;
+  width: 65px;
+  margin-left: 15px;
+}
+.footer .left .center .link a {
+  font-size: 12px;
+  line-height: 24px;
+  color: #adcbc8;
+}
+.footer .left .bottom {
+  margin-top: 10px;
+}
+.footer .left .bottom .badge {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+}
+.footer .left .bottom .badge img {
+  width: 100%;
+  height: 100%;
+}
+.footer .left .bottom .copyright {
+  float: right;
+  font-size: 12px;
+  color: #fff;
+  margin-left: 14px;
+}
+.footer .right .top .contactUs, .footer .right .top .members, .footer .right .top .customer {
+  margin-right: 40px;
+}
+.footer .right .top .contactUs dt, .footer .right .top .members dt, .footer .right .top .customer dt {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer .right .top .contactUs dt dd, .footer .right .top .members dt dd, .footer .right .top .customer dt dd {
+  color: #adcbc8;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
