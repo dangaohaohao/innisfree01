@@ -45,6 +45,8 @@
   - err: -2, msg: '用户名或密码不正确'
   - err: -3, msg: '该用户名已存在'
   - err: -4, msg: '内部错误'
+  - err: -5, msg: '账户格式不正确,必须为手机号或者邮箱'
+  
 + 验证码逻辑接口实现
   1. 验证用户名存在
   2. 获取验证码
@@ -82,6 +84,7 @@
   db.user.drop()  删除一个集合/ 表
   db.user.find() 在表中查找
   mongoose 插件中 API 文档中模型中有 增删改查操作的 api
+   db.getCollection('users').find({us:'13319470482', pass:'13319470482'}) 查询
 
   let qianxunObj = {
   username: '千寻',

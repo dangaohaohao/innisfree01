@@ -40,15 +40,15 @@ router.get('/login.html', function (req, res) {
 // 登录操作 需要 用户名 和 密码在数据库中可以找到
 router.post('/login', function (req, res) {
 
-  let {username, password} = req.body;
+  let {us, pass} = req.body;
 
-  if (!username || !password) {
+  if (!us || !pass) {
     res.send({err: -1, msg: '参数错误'});
   }
 
   User.find({
-    username,
-    password
+    us: us,
+    pass: pass
   })
   .then((data) => {
     // 注意只要能查找成功就会进入到这里 如果没有会返回空数组，所以判断是否
@@ -63,6 +63,8 @@ router.post('/login', function (req, res) {
     res.send({err: -4, msg: '内部错误'});
   });
 
+
+
 });
 
 
@@ -70,22 +72,27 @@ router.post('/login', function (req, res) {
 // 注册操作
 router.post('/register', function (req, res) {
 
-  let {username, password} = req.body;
+  let {us, pass} = req.body;
 
-  if (!username || !password) {
+  if (!us || !pass) {
     res.send({err: -1, msg: '参数错误'});
+  }
+
+  // 验证账户的格式是否正确
+  if (!(/^\w{2,18}@[0-9a-z]{1,10}(\.[a-z]{2,3}){1,2}$/.test(us) || /^(1|\+861)[3-8]{1}\d{9}$/.test(us))) {
+    res.send({err: -5, msg: '账户格式不正确,必须为手机号或者邮箱'});
   }
   
 
-  User.find({username})
+  User.find({us})
   .then((data) => {
     if (data.length === 0) {
 
       // 说明用户名不存在，可以注册
-      return User.insertMany({username, password});
+      return User.insertMany({us, pass});
     }else {
        // 说明用户名已经存在
-    res.send({err: -3, msg: '改用户名已存在'});
+    res.send({err: -3, msg: '该用户名已存在'});
     }
    
   })

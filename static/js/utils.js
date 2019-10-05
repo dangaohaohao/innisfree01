@@ -108,3 +108,20 @@ function removeCookie(key){
     setCookie(key,'123',-10);
 }
 
+// 封装 jquery 中 的 $.ajax
+function ajaxPromise(type, url, data) {
+    return new Promise(function(resolve, reject) {
+      $.ajax({
+        type: type,
+        url: url,
+        data: data,
+        success: function(data) {
+          resolve(data);
+        },
+        error: function(err) {
+          reject(err);
+        }
+      });
+    });
+  }
+
