@@ -1,0 +1,24 @@
+{
+  "name": "innisfree01",
+  "version": "1.0.0",
+  "description": "+ static 静态资源文件目录\r   - css     转译后的 css 文件\r   - sass     开发时的 sass 文件\r   - images    图片文件\r   - scripts   js 文件",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuzhenliu/innisfree01.git"
+  },
+  "keywords": [],
+  "author": "yuzhenliu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuzhenliu/innisfree01/issues"
+  },
+  "homepage": "https://github.com/yuzhenliu/innisfree01#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1"
+  }
+}
