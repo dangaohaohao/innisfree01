@@ -5,20 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>悦诗风吟官方网站暨网上商城</title>
+  <title>登录_注册-欢迎光临-悦诗风吟(innisfree)官网商城</title>
   <link href="../static/images/favicon.ico" rel="shortcut icon">
   <link rel="stylesheet" href="../static/css/reset.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
   <link rel="stylesheet" href="../static/css/iconfont.css">
   <link rel="stylesheet" href="../static/css/header.css">
   <link rel="stylesheet" href="../static/css/footer.css">
-  <link rel="stylesheet" href="../static/css/index.css">
-
+  <link rel="stylesheet" href="../static/css/login.css">
   <script src="../static/js/jquery-1.8.3.js" defer></script>
   <script src="https://unpkg.com/swiper/js/swiper.js" defer></script>
   <script src="../static/js/header.js" defer></script>
   <script src="../static/js/footer.js" defer></script>
-  <script src="../static/js/index.js" defer></script>
+  <script src="../static/js/login.js" defer></script>
 </head>
 
 <body>
@@ -514,419 +513,115 @@
     </div>
   </header>
 
-  <!-- banner 结构 -->
-  <div class="bannerWrap">
-    <!-- swiper-container 结构轮播图 -->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="../static/images/banner01.jpg">
-          <!-- 轮播图补充信息 -->
-          <li class="info">
-            <div class="main clear">
-              <div class="left fl">
-                <p class="tit1">3种成分 2重修护</p>
-                <p class="tit2">1瓶改善初老危“肌”</p>
-                <p class="info1"></p>
-                <p class="info2"></p>
-              </div>
-              <div class="right fr">
-                <a href="javascript:;">
-                  <span>查看详情</span>
-                  <span class="iconfont icon-youjiantou1"></span>
-                </a>
-              </div>
-            </div>
-          </li>
-        </div>
-        <div class="swiper-slide">
-          <img src="../static/images/banner02.jpg">
-          <!-- 轮播图补充信息 -->
-          <li class="info">
-            <div class="main clear">
-              <div class="left fl">
-                <p class="tit1">不惧眼色</p>
-                <p class="tit2">妆由我心</p>
-                <p class="info1">肆熠绽放限量版</p>
-                <p class="info2">耀目上线</p>
-              </div>
-              <div class="right fr">
-                <a href="javascript:;">
-                  <span>查看详情</span>
-                  <span class="iconfont icon-youjiantou1"></span>
-                </a>
-              </div>
-            </div>
-          </li>
-        </div>
-        <div class="swiper-slide">
-          <img src="../static/images/banner03.png">
-          <!-- 轮播图补充信息 -->
-          <li class="info">
-            <div class="main clear">
-              <div class="left fl">
-                <p class="tit1">国庆出游必备</p>
-                <p class="tit2">放价不放假</p>
-                <p class="info1"></p>
-                <p class="info2"></p>
-              </div>
-              <div class="right fr">
-                <a href="javascript:;">
-                  <span>查看详情</span>
-                  <span class="iconfont icon-youjiantou1"></span>
-                </a>
-              </div>
-            </div>
-          </li>
-        </div>
+  <!-- login 页面 -->
+  <!-- contentBox -->
+  <div class="contentBox">
+    <!-- contentWrap -->
+    <div class="contentWrap w980">
+      <!-- wrapTitle -->
+      <div class="wrapTitle">
+        <!-- location -->
+        <p class="location">
+          <span class="homePath"></span>
+          <span class="path"><a href="javascript:;">登录/会员注册</a></span>
+          <span class="path"><a href="javascript:;">登录</a></span>
+        </p>
       </div>
 
-      <!-- 如果需要分页器 -->
-      <div class="swiper-pagination"></div>
+      <!-- wrapContent -->
+      <div class="wrapContent clear">
 
-      <!-- 如果需要导航按钮 -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+        <!-- leftTabWrap -->
+        <div class="leftTabWrap">
+          <!-- tabHeader -->
+          <h1 class="tabHeader">会员中心</h1>
 
-    </div>
+          <!-- tabWrap -->
+          <nav class="tabWrap">
+            <!-- class="tab-item" -->
+            <li class="tab-item">
+              <h5 class="tabname active">会员登录</h5>
+              <!-- tabContent -->
+              <div class="tabContent show">
+                <div class="loginTabCon">
+                  <h3 class="title">会员信息</h3>
+                  <p class="info">欢迎加入来自纯净济州岛的innisfree官网商城！</p>
+                  <!-- loginWrap -->
+                  <div class="loginWrap">
+                    <!-- formWrap -->
+                    <div class="formWrap">
+                      <h4><img src="../static/images/title_login.gif"></h4>
+                      <!-- 账号 -->
+                      <dl class="clear">
+                        <dt><label for="account">邮箱地址/手机号码</label></dt>
+                        <dd><input type="text" id="account" name="account"></dd>
+                      </dl>
+                      <!-- 密码 -->
+                      <dl class="clear">
+                        <dt><label for="password">密码</label></dt>
+                        <dd><input type="password" id="password" name="password"></dd>
+                      </dl>
 
-    <!-- playstate 控制暂停播放的按钮-->
-    <div class="playstate">
-      <span class="iconfont icon-zanting"></span>
-    </div>
-
-
-  </div>
-
-  <!-- productWrap -->
-  <div class="productWrap">
-
-    <!-- productContent -->
-    <div class="productContent w1032">
-      <!-- navWrap 上边的切换部分 -->
-      <div class="navWrap">
-        <!-- tab -->
-        <nav class="tab clear">
-          <!-- tab-item -->
-          <li class="tab-item active">新品推荐</li>
-          <li class="tab-item">畅销产品</li>
-        </nav>
-      </div>
-      <!-- centerWrap 中间的产品部分 -->
-      <div class="centerWrap clear">
-        <!-- left  -->
-        <div class="left fl">
-          <!-- swiper-container 轮播图部分 -->
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="../static/images/prd01.png">
-              </div>
-              <div class="swiper-slide">
-                <img src="../static/images/prd02.png">
-              </div>
-              <div class="swiper-slide">
-                <img src="../static/images/prd03.png">
-              </div>
-            </div>
-            <!-- 如果需要分页器 -->
-            <div class="swiper-pagination"></div>
-          </div>
-          <!-- foryou -->
-          <div class="foryouWrap">
-            <!-- foryou -->
-            <div class="foryou">
-              <span>FORYOU</span>
-            </div>
-            <p>登录查看为你推荐的商品</p>
-            <!-- toLogin -->
-            <div class="toLogin">
-              <a href="javascript:;">
-                <span>登录</span>
-                <span class="iconfont icon-youjiantou1"></span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- 右边 产品部分 -->
-        <div class="right fr">
-          <!-- product -->
-          <nav class="product clear">
-            <!-- class="pro-item" -->
-            <li class="pro-item">
-              <!-- num -->
-              <div class="num">
-                <img src="../static/images/no1.png">
-              </div>
-              <!-- proImg -->
-              <a href="javascript:;" class="proImg">
-                <img src="../static/images/pro01.jpg">
-              </a>
-              <!-- proName -->
-              <h3 class="proName">绿茶精萃平衡水乳套装 全新上市 补水保湿 温和</h3>
-              <!-- price -->
-              <div class="priceWrap">
-                <span class="price">￥240</span>
-              </div>
-              <!-- toBuyWrap 立即购买 -->
-              <div class="toBuyWrap clear">
-                <!-- toBuy -->
-                <div class="toBuy">
-                  <a href="javascript:;">
-                    <span>立即购买</span>
-                    <span class="iconfont icon-youjiantou1"></span>
-                  </a>
+                      <!-- 登录 -->
+                      <a href="javascript:;" class="loginBtn">
+                        <img src="../static/images/btn_login.gif">
+                      </a>
+                      <!-- 记住 -->
+                      <p class="remem"><input type="checkbox" id="rememberMe" name="rememberMe">
+                        <label for="rememberMe">保存邮箱号/手机号</label></p>
+                      <!-- 注意事项 -->
+                      <ul class="note">
+                        <li>- 输入电子邮地址和密码进行登录时，请务必区分大小写。</li>
+                        <li>- IE6.0用户如出现登录后页面无反应的情况，请刷新页面或点击网站其它页面。</li>
+                      </ul>
+                      <!-- 使用其他方式登陆 -->
+                      <dl class="otherways">
+                        <dt>使用合作网站账号登录</dt>
+                        <dd><a href="javascript:;"><img src="../static/images/ico_sns_weibo.gif"></a></dd>
+                        <dd><a href="javascript:;"><img src="../static/images/ico_sns_wechat.gif"></a></dd>
+                        <dd><a href="javascript:;"><img src="../static/images/ico_sns_alipay.gif"></a></dd>
+                        <dd><a href="javascript:;"><img src="../static/images/ico_sns_qq.gif"></a></dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <!-- 尚未加入会员 应该是使用锚点链接吧-->
+                  <!-- otherinfoWrap -->
+                  <div class="otherinfoWrap">
+                    <img src="../static/images/txt_loginNote.gif">
+                  </div>
                 </div>
-
-                <!-- addCart -->
-                <span class="addCart">
-                  <img src="../static/images/addCart.png">
-                </span>
-
-                <!-- addLike -->
-                <span class="addLike">
-                  <img src="../static/images/addLike.png">
-                </span>
               </div>
             </li>
-            <li class="pro-item">
-              <!-- num -->
-              <div class="num">
-                <img src="../static/images/no2.png">
-              </div>
-              <!-- proImg -->
-              <a href="javascript:;" class="proImg">
-                <img src="../static/images/pro02.png">
-              </a>
-              <!-- proName -->
-              <h3 class="proName">绿茶精萃平衡水乳套装 全新上市 补水保湿 温和</h3>
-              <!-- price -->
-              <div class="priceWrap">
-                <span class="price">￥240</span>
-              </div>
-              <!-- toBuyWrap 立即购买 -->
-              <div class="toBuyWrap clear">
-                <!-- toBuy -->
-                <div class="toBuy">
-                  <a href="javascript:;">
-                    <span>立即购买</span>
-                    <span class="iconfont icon-youjiantou1"></span>
-                  </a>
-                </div>
-
-                <!-- addCart -->
-                <span class="addCart">
-                  <img src="../static/images/addCart.png">
-                </span>
-
-                <!-- addLike -->
-                <span class="addLike">
-                  <img src="../static/images/addLike.png">
-                </span>
+            <li class="tab-item">
+              <h5 class="tabname">加入会员</h5>
+              <!-- tabContent -->
+              <div class="tabContent">
+                <div class="joinMembers">joinMembers</div>
               </div>
             </li>
-            <li class="pro-item">
-              <!-- num -->
-              <div class="num">
-                <img src="../static/images/no3.png">
-              </div>
-              <!-- proImg -->
-              <a href="javascript:;" class="proImg">
-                <img src="../static/images/pro03.png">
-              </a>
-              <!-- proName -->
-              <h3 class="proName">绿茶精萃平衡水乳套装 全新上市 补水保湿 温和</h3>
-              <!-- price -->
-              <div class="priceWrap">
-                <span class="price">￥240</span>
-              </div>
-              <!-- toBuyWrap 立即购买 -->
-              <div class="toBuyWrap clear">
-                <!-- toBuy -->
-                <div class="toBuy">
-                  <a href="javascript:;">
-                    <span>立即购买</span>
-                    <span class="iconfont icon-youjiantou1"></span>
-                  </a>
-                </div>
-
-                <!-- addCart -->
-                <span class="addCart">
-                  <img src="../static/images/addCart.png">
-                </span>
-
-                <!-- addLike -->
-                <span class="addLike">
-                  <img src="../static/images/addLike.png">
-                </span>
+            <li class="tab-item">
+              <h5 class="tabname">找回密码</h5>
+              <!-- tabContent -->
+              <div class="tabContent">
+                <div class="findPassword">findPassword</div>
               </div>
             </li>
-            <li class="pro-item">
-              <!-- num -->
-              <div class="num">
-                <img src="../static/images/no4.png">
-              </div>
-              <!-- proImg -->
-              <a href="javascript:;" class="proImg">
-                <img src="../static/images/pro04.png">
-              </a>
-              <!-- proName -->
-              <h3 class="proName">绿茶精萃平衡水乳套装 全新上市 补水保湿 温和</h3>
-              <!-- price -->
-              <div class="priceWrap">
-                <span class="price">￥240</span>
-              </div>
-              <!-- toBuyWrap 立即购买 -->
-              <div class="toBuyWrap clear">
-                <!-- toBuy -->
-                <div class="toBuy">
-                  <a href="javascript:;">
-                    <span>立即购买</span>
-                    <span class="iconfont icon-youjiantou1"></span>
-                  </a>
-                </div>
-
-                <!-- addCart -->
-                <span class="addCart">
-                  <img src="../static/images/addCart.png">
-                </span>
-
-                <!-- addLike -->
-                <span class="addLike">
-                  <img src="../static/images/addLike.png">
-                </span>
+            <li class="tab-item">
+              <h5 class="tabname">使用条款</h5>
+              <!-- tabContent -->
+              <div class="tabContent">
+                <div class="terms">terms</div>
               </div>
             </li>
-            <li class="pro-item">
-              <!-- num -->
-              <div class="num">
-                <img src="../static/images/no5.png">
-              </div>
-              <!-- proImg -->
-              <a href="javascript:;" class="proImg">
-                <img src="../static/images/pro05.png">
-              </a>
-              <!-- proName -->
-              <h3 class="proName">绿茶精萃平衡水乳套装 全新上市 补水保湿 温和</h3>
-              <!-- price -->
-              <div class="priceWrap">
-                <span class="price">￥240</span>
-              </div>
-              <!-- toBuyWrap 立即购买 -->
-              <div class="toBuyWrap clear">
-                <!-- toBuy -->
-                <div class="toBuy">
-                  <a href="javascript:;">
-                    <span>立即购买</span>
-                    <span class="iconfont icon-youjiantou1"></span>
-                  </a>
-                </div>
-
-                <!-- addCart -->
-                <span class="addCart">
-                  <img src="../static/images/addCart.png">
-                </span>
-
-                <!-- addLike -->
-                <span class="addLike">
-                  <img src="../static/images/addLike.png">
-                </span>
-              </div>
-            </li>
-            <li class="pro-item">
-              <!-- num -->
-              <div class="num">
-                <img src="../static/images/no6.png">
-              </div>
-              <!-- proImg -->
-              <a href="javascript:;" class="proImg">
-                <img src="../static/images/pro06.png">
-              </a>
-              <!-- proName -->
-              <h3 class="proName">绿茶精萃平衡水乳套装 全新上市 补水保湿 温和</h3>
-              <!-- price -->
-              <div class="priceWrap">
-                <span class="price">￥240</span>
-              </div>
-              <!-- toBuyWrap 立即购买 -->
-              <div class="toBuyWrap clear">
-                <!-- toBuy -->
-                <div class="toBuy">
-                  <a href="javascript:;">
-                    <span>立即购买</span>
-                    <span class="iconfont icon-youjiantou1"></span>
-                  </a>
-                </div>
-
-                <!-- addCart -->
-                <span class="addCart">
-                  <img src="../static/images/addCart.png">
-                </span>
-
-                <!-- addLike -->
-                <span class="addLike">
-                  <img src="../static/images/addLike.png">
-                </span>
+            <li class="tab-item">
+              <h5 class="tabname">隐私声明</h5>
+              <!-- tabContent -->
+              <div class="tabContent">
+                <div class="statement">statement</div>
               </div>
             </li>
           </nav>
         </div>
-      </div>
-      <!-- bottomWrap 下面的导航部分 -->
-      <div class="bottomWrap">
-        <!-- more -->
-        <div class="more">
-          <a href="javascript:;">
-            <span>更多畅销</span>
-            <span class="iconfont icon-youjiantou1"></span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- conBox -->
-  <div class="conBox">
-    <!-- conWrap -->
-    <div class="conWrap w1032">
-
-      <!-- tempWrap -->
-      <nav class="tempWrap clear">
-        <a href="javascript:;" class="temp-item">
-          <img src="../static/images/temp01.png">
-        </a>
-        <a href="javascript:;" class="temp-item">
-          <img src="../static/images/temp02.png">
-        </a>
-        <a href="javascript:;" class="temp-item">
-          <img src="../static/images/temp03.png">
-        </a>
-      </nav>
-
-      <!-- videoWrap -->
-      <div class="videoWrap">
-        <!-- video -->
-        <video class="video" poster="../static/images/videoBegin.jpg">
-          <source src="../static/images/video.mp4">
-          <p>您的浏览器版本过低，无法播放视频</p>
-        </video>
-      </div>
-
-      <!-- moreWrap -->
-      <div class="moreWrap clear">
-        <div class="left fl">
-          <a href="javascript:;">
-            <img src="../static/images/more01.png">
-          </a>
-        </div>
-        <nav class="right fr">
-          <a href="javascript:;" class="more-item">
-            <img src="../static/images/more02.jpg">
-          </a>
-          <a href="javascript:;" class="more-item">
-            <img src="../static/images/more03.jpg">
-          </a>
-        </nav>
       </div>
 
     </div>
@@ -1009,7 +704,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>
