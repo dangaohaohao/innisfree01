@@ -219,15 +219,100 @@
 .contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .loginTabCon .otherinfoWrap img {
   width: 100%;
 }
-.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers {
-  width: 100%;
-  min-height: 400px;
-  font-size: 40px;
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .title {
+  font-size: 20px;
   font-weight: bold;
-  background-color: pink;
+  height: 38px;
+  line-height: 38px;
+  color: #333;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .info {
+  font-size: 12px;
+  color: #666;
+  height: 12px;
+  line-height: 12px;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .loginWrap {
+  width: 782px;
+  height: 310px;
+  margin-top: 30px;
+  position: relative;
+  background: url("../images/BG_loginBox.gif") no-repeat center;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .loginWrap .formWrap {
+  position: absolute;
+  left: 294px;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .loginWrap .formWrap h4 {
+  width: 390px;
+  margin: 14px 0 12px;
+  padding: 0 0 18px 0;
+  border-bottom: 1px dashed #ccc;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .loginWrap .formWrap h4 img {
+  height: 49px;
+  width: auto;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .loginWrap .formWrap dl {
+  height: 20px;
+  margin: 6px 0;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .loginWrap .formWrap dl dt {
+  width: 124px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #666;
+  text-align: left;
+  float: left;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .loginWrap .formWrap dl dd {
+  width: 182px;
+  height: 20px;
+  line-height: 20px;
+  float: left;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .loginWrap .formWrap dl dd input {
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  outline: none;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .loginWrap .formWrap .registerBtn {
+  display: block;
+  width: 70px;
+  height: 20px;
+  line-height: 20px;
   text-align: center;
-  padding-top: 30px;
-  color: #fff;
+  background-color: #ddd;
+  border: 1px solid #333;
+  margin: 30px 0 30px 180px;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .loginWrap .formWrap .otherways dt {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .loginWrap .formWrap .otherways dd {
+  width: 30px;
+  height: 30px;
+  margin-left: 14px;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .loginWrap .formWrap .otherways dd a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .loginWrap .formWrap .otherways dd a img {
+  width: 100%;
+  height: 100%;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .otherinfoWrap {
+  width: 782px;
+  margin-top: 28px;
+}
+.contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .joinMembers .otherinfoWrap img {
+  width: 100%;
 }
 .contentBox .contentWrap .wrapContent .leftTabWrap .tabWrap .tab-item .tabContent .findPassword {
   width: 100%;
